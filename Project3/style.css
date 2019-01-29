@@ -1,10 +1,23 @@
+body{
+    display: grid;
+    grid-template-rows: repeat(6, 150px) 100vh;
+    grid-template-columns: 1fr 1fr;
+}
+.giveColor{
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+    background-color: #CCDEE2;
+    z-index: -1;
+}
 header{
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80% auto;
-    height: 500px;
+    height: 450px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 .header__column{
     padding-top: 20px;
@@ -58,4 +71,63 @@ header{
     font-weight: bold;
     padding-bottom: 30px;
     border-bottom: 5px black solid;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(3, 450px);
+    margin: 0 20% 0 20%;
+    grid-gap: 50px;
+    grid-row-start: 5;
+    grid-column: 1 / 3;
+}
+.main__grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+}
+.flower{
+    background-image: url(https://i.pinimg.com/564x/4b/4c/da/4b4cda7975ae324f9cd66250b3fa85f7.jpg);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    opacity: 0.9;
+    z-index: -1;
+}
+.main__grid:first-child h1{
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    text-align: center;
+}
+.main__grid:first-child p{
+    grid-column: 1 / span 2;
+    grid-row: 3 / -1;
+    font-weight: bold;
+    text-align: center;
+    background-color: #CCDEE2;
+    margin: 0px;
+    opacity: 0.8;
+}
+.main__grid:nth-child(2) .grid__items:first-child{
+background-color: #FAC0BE;
+}
+.main__grid:nth-child(2) .grid__items:nth-child(2){
+    background-color: #FFEDCC;
+}
+.main__grid:nth-child(2) .grid__items:nth-child(3){
+    background-color: #CCDEE2;
+}
+.main__grid:nth-child(2) .grid__items:nth-child(4){
+    grid-column-start: 2;
+    grid-row: 1 / span 2;
+    border-top: 9px solid #E5857E;
+    background-color: #FAC0BE;
+    background-image: url(https://i.pinimg.com/564x/42/ed/7e/42ed7e1e9573e9d6a30ebcaf7be5677d.jpg);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+.main__grid:nth-child(2) .grid__items:nth-child(5) h1{
+    border-bottom: 9px solid #E5857E;
+}
+.main__grid:nth-child(2) .grid__items:nth-child(5){
+    background-color: #FFEDCC;
 }
