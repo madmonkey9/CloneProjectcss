@@ -1,12 +1,12 @@
 {
-  "name": "Project2",
+  "name": "Project3",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "scripts": {
     "start": "parcel index.html"
   },
-  "description": ""
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
