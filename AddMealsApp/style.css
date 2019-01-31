@@ -1,0 +1,109 @@
+body{
+    padding-left: 25px;
+}
+.header{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.header__title{
+    margin: 0px;
+}
+.navigation__list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-auto-columns: 50px;
+    grid-auto-flow: column;
+    text-align: center;
+    padding-left: 25px;
+    grid-gap: 40px;
+    overflow: scroll;
+}
+/* .navigation__list:hover{
+    opacity: 0.2;
+} */
+.navigation__list .navigation__item{
+    display: grid;
+    grid-template-rows: 50px 20px;
+    grid-gap: 10px;
+}
+.navigation__list:hover .navigation__item{
+    opacity: 0.5;
+}
+.navigation__item .item__icon{
+    font-size: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding-top: 2px;
+    box-shadow: 0px 10px 35px rgb(0, 0, 0, 0.25), 0 6px 6px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.navigation__list .navigation__item:hover{
+    opacity:1;
+}
+.navigation__item .item__name{
+    font-size: 14px;
+    font-weight: 600;
+}
+.fetures__wrap{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    overflow: scroll;
+    grid-gap: 30px;
+    border-radius: 30px;
+}
+.fetures__wrap .fetured__meal{
+    background-image: url(https://i.pinimg.com/564x/27/d7/a7/27d7a72143932c6f51a58123ae2b6c98.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.fetured__meal__title{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.fetured__meal__button{
+    margin-bottom: 10px;
+    padding: 2px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+.recipes{
+    margin-top: 50px;
+    margin-right: 20px;;
+}
+.recipe__list{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    padding-left: 0px;;
+}
+.recipe{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe__name{
+    font-weight: 600;
+}
+.recipe__button{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-around; 
+}
